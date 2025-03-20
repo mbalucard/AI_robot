@@ -25,3 +25,4 @@
         APP_ID = ''
         APP_SECRET = ''
     ```
+4. 调试运行code/debug_robot.py
