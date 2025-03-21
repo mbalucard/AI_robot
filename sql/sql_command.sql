@@ -9,9 +9,12 @@ CREATE TABLE feishu_chat (
 );
 -- 清理数据 
 TRUNCATE TABLE feishu_chat;
+
 -- 查询数据
 select *
 from feishu_chat;
+
+-- 查询当天数据
 select distinct message_id
 from feishu_chat
 where DATE_FORMAT(STR_TO_DATE(create_time, '%Y-%m-%d %H:%i:%s'), '%Y-%m-%d') = DATE_FORMAT(NOW(), '%Y-%m-%d')
