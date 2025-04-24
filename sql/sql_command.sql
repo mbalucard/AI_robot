@@ -1,7 +1,7 @@
 -- 创建目录
 CREATE TABLE feishu_chat (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    tenant_key VARCHAR(20),
+    open_id VARCHAR(50),
     message_id VARCHAR(50),
     user TEXT,
     assistant TEXT,
